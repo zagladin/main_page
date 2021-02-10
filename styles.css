@@ -16,8 +16,8 @@
     position: relative;
     top: 20%;
     display: block;
-    width: 870px;
-    height: 730px;
+    width: 70em;
+    height: 60em;
     margin: 0 auto;
     color: #EEFBFB;
 }
@@ -43,6 +43,7 @@
 .contact {
     font-size: 5em;
     padding: 0.7em;
+    font-weight: 300;
 }
 
 .contacts {
@@ -61,20 +62,25 @@
 
 @media (max-width: 640px) {
     .content {
-        width: 580px;
+        top: 15%;
+        width: 30em;
     }
 
     .error {
-        font-size: 5em;
-    }
-
-    .message {
         font-size: 4em;
     }
 
-    .contact {
-        padding: 0.8em;
+    .message {
         font-size: 3em;
+    }
+
+    .contact {
+        padding: 1.5em;
+        font-size: 2em;
+    }
+
+    .capture {
+        text-align: center;
     }
 }
 
