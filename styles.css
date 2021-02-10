@@ -13,8 +13,8 @@
     position: relative;
     top: 20%;
     display: block;
-    width: 70em;
-    height: 70em;
+    width: 870px;
+    height: 730px;
     margin: 0 auto;
     color: #EEFBFB;
 }
@@ -39,7 +39,7 @@
 
 .contact {
     font-size: 5em;
-    padding: 0.5em;
+    padding: 0.7em;
 }
 
 .contacts {
@@ -58,7 +58,7 @@
 
 @media (max-width: 640px) {
     .content {
-        width: 48em;
+        width: 580px;
     }
 
     .error {
@@ -66,12 +66,12 @@
     }
 
     .message {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .contact {
         padding: 0.8em;
-        font-size: 2em;
+        font-size: 3em;
     }
 }
 
