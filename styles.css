@@ -30,12 +30,12 @@
 
 .error {
     font-size: 7em;
-    font-weight: bolder;
+    font-weight: 500;
 }
 
 .message {
     font-size: 6em;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     padding: 0.4em;
 }
