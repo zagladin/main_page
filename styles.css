@@ -60,7 +60,7 @@
 }
 
 
-@media (max-width: 736px) {
+@media (max-width: 768px) {
     .content {
         top: 15%;
         width: 30em;
