@@ -6,6 +6,7 @@
     height: 100vh;
     background-color: #203647;
     font-family: 'Roboto', monospace;
+    overflow: auto;
 }
 
 .content {
@@ -13,10 +14,11 @@
     top: 20%;
     display: block;
     width: 70em;
-    height: 60em;
+    height: 70em;
     margin: 0 auto;
     color: #EEFBFB;
 }
+
 
 .centered {
     padding: 24px;
@@ -51,6 +53,17 @@
 
 .contacts a:hover {
     animation: links 1s linear infinite;
+}
+
+
+@media (max-width: 736px) {
+    .content {
+        width: 50em;
+    }
+
+    .contact {
+        padding: 1.7em;
+    }
 }
 
 @keyframes links {
