@@ -8,8 +8,8 @@
     width: 100vw;
     height: 100vh;
     background-color: #203647;
-    font-family: 'Roboto', monospace;
     overflow: auto;
+    font-family: 'Roboto', monospace;
 }
 
 .content {
@@ -60,16 +60,10 @@
     animation: links 1s linear infinite;
 }
 
-
-/*@custom-media --medium-viewport (min-width: 640px);*/
-/*@custom-media --large-viewport (min-width: 1024px);*/
-/*@custom-media --xtra-large-viewport (min-width: 1440px);*/
-
-
-@media (max-width: 640px) {
+@media (min-width: 768px) {
     .content {
-        top: 15%;
-        width: 550px;
+        top: 20%;
+        width: 750px;
     }
 
     .error {
@@ -81,8 +75,52 @@
     }
 
     .contact {
-        padding: 3.5em;
-        font-size: 2em;
+        padding: 1.5em;
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 1366px) {
+    .content {
+        top: 20%;
+        width: 1050px;
+    }
+
+    .error {
+        font-size: 6em;
+    }
+
+    .message {
+        font-size: 4em;
+    }
+
+    .contact {
+        padding: 1.5em;
+        font-size: 3.5em;
+    }
+}
+
+@media (min-width: 1920px) {
+    .content {
+        top: 20%;
+        width: 1900px;
+    }
+
+    .error {
+        font-size: 8em;
+    }
+
+    .message {
+        font-size: 5em;
+    }
+
+    .contact {
+        padding: 1em;
+        font-size: 3em;
+    }
+    
+    .links {
+        margin-left: 11.6em;
     }
 }
 
