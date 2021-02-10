@@ -56,7 +56,7 @@
 }
 
 
-@media (max-width: 736px) {
+@media (max-width: 640px) {
     .content {
         width: 50em;
     }
