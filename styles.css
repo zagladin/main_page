@@ -66,12 +66,12 @@
     }
 
     .message {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .contact {
         padding: 0.8em;
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 
@@ -86,4 +86,5 @@
     100% {
         opacity: 100%;
     }
+
 }
