@@ -58,11 +58,20 @@
 
 @media (max-width: 640px) {
     .content {
-        width: 50em;
+        width: 48em;
+    }
+
+    .error {
+        font-size: 5em;
+    }
+
+    .message {
+        font-size: 4em;
     }
 
     .contact {
         padding: 1.7em;
+        font-size: 3em;
     }
 }
 
