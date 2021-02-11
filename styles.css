@@ -43,17 +43,12 @@
 .links {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    margin: 0.5em 0 0 1.6em;
+    justify-content: space-between;
 }
 
 .links a {
     color: white;
     text-decoration: none;
-}
-
-.links a:before {
-    content: '--  ';
 }
 
 .links a:hover {
@@ -79,9 +74,9 @@
         font-size: 2.5em;
     }
 
-    .links {
+    /* .links {
         margin-left: 0.6em;
-    }
+    } */
 }
 
 @media (min-width: 1366px) {
@@ -103,7 +98,7 @@
         font-size: 3.5em;
     }
     .links {
-        margin-left: 0.6em;
+        flex-direction: row;
     }
 }
 
@@ -122,12 +117,13 @@
     }
 
     .contact {
-        padding: 1em;
+        width: 50%;
+        margin: auto;
         font-size: 3em;
     }
     
     .links {
-        margin-left: 19.9em;
+        margin-top: 1em;
     }
 }
 
