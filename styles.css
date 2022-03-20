@@ -4,6 +4,7 @@
     --lightblue: #a0d2eb;
     --dark-gray: #494D5F;
     --dark-purple: #8458B3;
+    --black: #000;
 }
 
 @page {
@@ -264,7 +265,8 @@ abbr:hover {
         visibility: visible;
         background-color: transparent;
         box-shadow: none;
-        color: #000;
+        color: var(--black);
+        margin-top: 0;
     }
 }
 
