@@ -18,15 +18,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127417164-1"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
-            integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
 <main class="wrapper">
-    <div class="container" id="to-print">
+    <div class="container" id="section-to-print">
         <section class="content">
             <div class="information">
                 <div class="name">
@@ -45,7 +41,7 @@
                     refinements, and others.
                 </p>
             </div>
-            <article class="experience">
+            <div class="experience">
                 <div class="position">
                     Frontend Engineer
                 </div>
@@ -63,8 +59,8 @@
                     production via basic GitLab CI/CD. Other stuff like service-workers, WebSockets, SSE, webpack
                     configs, Eslint, and, of course, we are using scrum.
                 </p>
-            </article>
-            <article class="experience">
+            </div>
+            <div class="experience">
                 <div class="position">
                     Frontend Engineer
                 </div>
@@ -88,10 +84,10 @@
                     Also, I participated in developing the React component library for internal projects and contributed
                     to it.
                 </p>
-            </article>
+            </div>
             <details class="additional">
                 <summary id="older">Older experience</summary>
-                <article class="experience">
+                <div class="experience">
                     <div class="position">
                         Web developer
                     </div>
@@ -104,8 +100,8 @@
                     <p class="description">
                         Development administration panel using Angular and TypeScript.
                     </p>
-                </article>
-                <article class="experience">
+                </div>
+                <div class="experience">
                     <div class="position">
                         QA engineer
                     </div>
@@ -124,8 +120,8 @@
                         <li>Coordination of testers for solving tasks</li>
                         <li>Reporting to customers</li>
                     </ul>
-                </article>
-                <article class="experience">
+                </div>
+                <div class="experience">
                     <div class="position">
                         Hardware/software engineer
                     </div>
@@ -145,7 +141,7 @@
                         </li>
                         <li>Maintenance, technical support, repair of ATMs, payment terminals, and POS terminals</li>
                     </ul>
-                </article>
+                </div>
             </details>
         </section>
         <section class="links">
@@ -231,12 +227,20 @@
                     </abbr>
                 </div>
             </div>
+            <div class="languages">
+                <div class="skill">
+                    <span>English</span>
+                    <span>B2 (advanced)</span>
+                </div>
+            </div>
         </section>
     </div>
-<!--    <button name="To PDF" class="toPDF" onclick="saveToPDF()">Save to PDF</button>-->
+    <div class="buttons">
+        <button name="Print" class="printButton" onclick="printCV()"></button>
+        <button name="Print" class="upwardButton" onclick="up()"></button>
+    </div>
 </main>
 <script async src="script.js"></script>
-<!--<script async src="html2pdf.bundle.min.js"></script>-->
 </body>
 
 </html>
