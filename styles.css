@@ -4,6 +4,18 @@
     --project-gray: #303030;
 }
 
+@page {
+    size: A4 portrait;
+}
+
+@page :left {
+    margin-left: 1.5cm;
+}
+
+@page :right {
+    margin-left: 1.5cm;
+}
+
 @font-face {
     src: url("https://fonts.googleapis.com/css?family=Roboto");
 }
@@ -14,22 +26,21 @@
     left: 0;
     width: 100%;
     background-color: var(--project-green);
-    overflow: auto;
 }
 
 .container {
     position: relative;
     display: flex;
-    flex-basis: 10em;
+    flex-direction: row;
     width: 100%;
     max-width: 1050px;
     margin: 64px auto 0 auto;
-    background-color: var(--project-white);
 }
 
 .content {
     width: 70%;
     padding: 24px;
+    background-color: var(--project-white);
 }
 
 .information {
@@ -111,7 +122,6 @@
 .links a {
     color: var(--project-white);
     text-decoration: none;
-
 }
 
 .links a:hover {
@@ -173,23 +183,46 @@ abbr:hover {
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
+@media (max-width: 768px) {
 
-@media (min-width: 1366px) {
-    .container {
-        width: 1050px;
+    .wrapper {
+        background-color: var(--project-white);
+        max-width: 440px;
     }
 
-}
-
-@media (min-width: 1920px) {
     .container {
-        width: 1900px;
+        margin: 0;
+        flex-direction: column-reverse;
     }
 
+    .content, .links {
+        width: 100%;
+    }
+
+    .content {
+        padding: 12px;
+    }
+
+    .description {
+        word-break: break-word;
+    }
+
+    .contact span,
+    .skill span {
+        font-size: 14px;
+        font-weight: bolder;
+        margin-top: 12px;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    .skill {
+        width: 100%;
+        max-width: 180px;
+    }
 }
 
