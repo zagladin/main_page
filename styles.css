@@ -197,9 +197,7 @@ abbr:hover {
 
     .content, .links {
         width: 100%;
-    }
-
-    .content {
+        /*max-width: 400px;*/
         padding: 12px;
     }
 
