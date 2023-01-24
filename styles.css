@@ -268,5 +268,13 @@ abbr:hover {
         color: var(--black);
         margin-top: 0;
     }
+
+    .contact {
+        display: none;
+    }
+
+    .skill span {
+        font-size: 12px;
+    }
 }
 
